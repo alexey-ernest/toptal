@@ -47,7 +47,7 @@ function go(width, height, x, y, x1, y1, board, s) {
       paths = [];
   for (i = len; i--;) {
     for (j = len; j--;) {
-      // filtering incompatible directions: (1,1), (2,2), (-1, 2), etc.
+      // filtering incompatible directions: (1,1), (2,2), (-1, 1), etc.
       if (Math.abs(directions[i] * directions[j]) !== 2) {
         continue;
       }
